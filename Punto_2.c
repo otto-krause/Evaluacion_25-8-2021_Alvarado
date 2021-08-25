@@ -13,10 +13,12 @@ int main()
 
     if (Dividendo>Divisor && (Dividendo && Dividendo)>0)
     {
-        do {Dividendo=Dividendo-Divisor;
+        do {
             Cociente=Cociente+1;
+            Resto=Dividendo-Divisor;
+            Dividendo=Resto;
             }
-        while(Dividendo>=0);
+        while(Resto>0);
 
         printf("\nEl cociente de la division es %d", Cociente-1);
         printf("\nEl resto de la division es %d", Resto);
