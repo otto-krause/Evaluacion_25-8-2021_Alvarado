@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h>
 
 int main()
 {
@@ -11,17 +10,16 @@ int main()
     printf("Ingrese el divisor de la operacion ");
     scanf("%d",&Divisor);
 
-    if (Dividendo>Divisor && (Dividendo && Dividendo)>0)
+    if (Dividendo>Divisor && Dividendo>0)
     {
         do {
-            Cociente=Cociente+1;
-            Resto=Dividendo-Divisor;
-            Dividendo=Resto;
+            Dividendo=Dividendo-Divisor;
+            Cociente+=1;
+            Resto=Dividendo;
             }
-        while(Resto>0);
+        while(Dividendo>=Divisor);
 
-        printf("\nEl cociente de la division es %d", Cociente-1);
-        printf("\nEl resto de la division es %d", Resto);
+        printf("\nEl cociente de la division es %d y el resto %d", Cociente, Resto);
     }
     else
     {
