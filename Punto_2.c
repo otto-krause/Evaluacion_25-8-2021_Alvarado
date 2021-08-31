@@ -3,7 +3,7 @@
 
 int main()
 {
-    int Dividendo=0, Divisor=0, Cociente=0, Resto=0, DividendoC=0, I=0;
+    int Dividendo=0, Divisor=0, Cociente=0, Resto=0, RM=0;
 
     printf("Ingrese el dividendo de la operacion ");
     scanf("%d",&Dividendo);
@@ -20,6 +20,13 @@ int main()
         while(Dividendo>=Divisor);
 
         printf("\nEl cociente de la division es %d y el resto %d", Cociente, Resto);
+    
+    for (Cociente; Cociente>=1; Cociente--)
+    {
+        RM=RM+Divisor;
+    }
+    
+    printf("\nLa multiplicacion entre el cociente y el divisor es %d", RM);
     }
     else
     {
