@@ -18,13 +18,14 @@ int main()
         break;
     
     default:
+    printf("0 ");
         for (I; I<=Num; I++)
         {
             NumF3=NumF1+NumF2;
             NumF1=NumF2;
             NumF2=NumF3;
 
-            printf("%d, ", NumF1);
+            printf("%d ", NumF1);
         }
         break;
     }
