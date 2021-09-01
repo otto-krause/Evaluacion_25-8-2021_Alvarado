@@ -17,4 +17,5 @@ int main()
 
             printf("%d ", NumF1);
         }
+    return 0;
 }
