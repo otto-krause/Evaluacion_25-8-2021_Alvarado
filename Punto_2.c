@@ -5,9 +5,9 @@ int main()
 {
     int Dividendo=0, Divisor=0, Cociente=0, Resto=0, RM=0;
 
-    printf("Ingrese el dividendo de la operacion ");
+    puts("Ingrese el dividendo de la operacion ");
     scanf("%d",&Dividendo);
-    printf("Ingrese el divisor de la operacion ");
+    puts("Ingrese el divisor de la operacion ");
     scanf("%d",&Divisor);
 
     if (Dividendo>Divisor && Dividendo>0)
@@ -30,7 +30,7 @@ int main()
     }
     else
     {
-        printf("No se puede realizar la division");
+        puts("No se puede realizar la division");
     }
     return 0;
 }
