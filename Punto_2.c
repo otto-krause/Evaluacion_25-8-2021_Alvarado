@@ -32,4 +32,5 @@ int main()
     {
         printf("No se puede realizar la division");
     }
+    return 0;
 }
